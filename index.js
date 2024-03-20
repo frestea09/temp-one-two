@@ -7,18 +7,8 @@ app.set("view engine", "ejs");
 app.get("/", (req, res) => {
   res.render("index", { name: "ilman" });
 });
-// app.get("/template", (req, res) => {
-//   res.render("index", {});
-// });
 
-// app.post("/", (req, res) => {
-//   let numberone = req.body.inputOne;
-//   res.send({ numberone });
-// });
-// app.get("/about-us", (req, res) => {
-//   res.send("hello about us");
-// });
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log(`running on port ${port}`);
 });
 module.exports = app;
